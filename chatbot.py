@@ -12,7 +12,7 @@ from langchain.chat_models import ChatOpenAI
 
 # Set Streamlit page configuration
 im = Image.open('sricon.png')
-st.set_page_config(page_title='A la ChatGPT', layout='wide', page_icon=im)
+st.set_page_config(page_title='Atomic GPT', layout='wide', page_icon=im)
 # Initialize session states
 if "generated" not in st.session_state:
     st.session_state["generated"] = []
@@ -67,7 +67,7 @@ def new_chat():
 K = 10
 
 # Set up the Streamlit app layout
-st.title("A la ChatGPT")
+st.title("Atomic GPT")
 
 hide_default_format = """
        <style>
