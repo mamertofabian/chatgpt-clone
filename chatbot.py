@@ -7,8 +7,8 @@ from langchain.chains.conversation.memory import ConversationEntityMemory
 from langchain.chains.conversation.prompt import ENTITY_MEMORY_CONVERSATION_TEMPLATE
 from langchain.chat_models import ChatOpenAI
 
-from main import init_env_vars
-init_env_vars()
+# from main import init_env_vars
+# init_env_vars()
 
 # Set Streamlit page configuration
 im = Image.open('sricon.png')
@@ -77,8 +77,8 @@ hide_default_format = """
        """
 st.markdown(hide_default_format, unsafe_allow_html=True)
 
-# API_O = st.secrets["OPENAI_API_KEY"]
-API_O = os.environ.get('OPENAI_API_KEY')
+API_O = st.secrets["OPENAI_API_KEY"]
+# API_O = os.environ.get('OPENAI_API_KEY')
 
 # Session state storage would be ideal
 if API_O:
